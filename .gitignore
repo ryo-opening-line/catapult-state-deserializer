@@ -1,0 +1,34 @@
+*-debug.log
+*-error.log
+/.nyc_output
+/dist
+/lib
+/tmp
+/yarn.lock
+node_modules
+/catapult-opt-in-toolkit-*.tgz
+/output*
+*.log
+
+
+### Intellij+iml Patch ###
+# Reason: https://github.com/joeblau/gitignore.io/issues/186#issuecomment-249601023
+
+modules.xml
+.idea/
+*.ipr
+*.iml
+
+# End of https://www.gitignore.io/api/intellij+iml
+dist/
+ts-docs
+docs/
+.vscode/launch.json
+*.csv
+*.txt
+*.zip
+*.properties
+/output/
+/.eslintcache
+/target/
+/coverage/
