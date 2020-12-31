@@ -13,7 +13,7 @@ import { StateType } from './model/StateType';
 import { Convert } from 'symbol-sdk';
 import { Formatter } from './utils/Formatter';
 
-export class Deserailizer {
+export class Deserializer {
     constructor(public payload: string, public readonly type: StateType) {
         // a bit of hack here to play with the version.
         this.payload = !['0100', '0200'].includes(this.payload.substring(0, 4)) ? `0100${payload}` : payload;
