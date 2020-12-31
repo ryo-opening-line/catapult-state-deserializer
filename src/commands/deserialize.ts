@@ -1,6 +1,6 @@
 import { Command, flags } from '@oclif/command';
 import CommandHelper from '../CommandHelper';
-import { Deserailizer } from '../Deserializer';
+import { Deserializer } from '../Deserializer';
 import { StateType } from '../model/StateType';
 
 export default class Deserialize extends Command {
@@ -23,7 +23,7 @@ export default class Deserialize extends Command {
 
     async run(): Promise<void> {
         const { flags } = this.parse(Deserialize);
-        const deserializer = new Deserailizer(flags.payload, StateType[flags.type]);
+        const deserializer = new Deserializer(flags.payload, StateType[flags.type]);
         deserializer.run();
     }
 }
